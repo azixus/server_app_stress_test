@@ -276,7 +276,7 @@ async function main() {
     await printSummary(0, performances);
 
     for (let [key, val] of performances) {
-        writePerformanceToCSV(val, 'key.csv');
+        writePerformanceToCSV(val, `${key}.csv`);
     }
 
     admin.close();
